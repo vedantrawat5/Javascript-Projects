@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elna</title>
+    <style>
+        * {
+            padding: 2px;
+            margin:  2px;
+        }
+    </style>
+    <script>
+        function eLna() {
+            x = Number(document.getElementById("f1").value);
+
+            if ( x % 5 == 0 ) 
+            {
+                document.getElementById("io").value="It is divisible";
+            }
+            if ( x % 11 == 0 )
+            {
+                document.getElementById("io").value="It is divisible";
+            }
+            if ( x % 55 == 0)
+            {
+                document.getElementById("io").value="It is divisible";
+            }
+            else 
+            {
+                document.getElementById("io").value="It isn't divisible";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label for="input_value">Enter a number:</label>
+    <input type="text" id="f1">
+
+    <button type="button" onclick="eLna()">Click Me!!</button>
+
+    <label for="output_value">Divisiblity Test! </label>
+    <input type="text" id="io">
+
+</body>
+
+</html>

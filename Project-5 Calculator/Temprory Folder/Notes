@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Add-4_Numbers
+    </title>
+    <style>
+        *
+        {
+            padding: 2px;
+            margin:  2px;
+        }
+    </style>
+    <script>
+        function $4shots()
+            {
+            var a,b,c,d,e;
+
+            a=Number(document.getElementById("apple").value);
+
+            b=Number(document.getElementById("ball").value);
+
+            c=Number(document.getElementById("cat").value);
+
+            d=Number(document.getElementById("dog").value);
+
+            e=a+b+c+d;
+
+            
+            document.getElementById("elef").value=e;
+
+            }
+    </script>
+</head>
+<body>
+    <label for="num_01">Enter First Number:</label>
+    <input type="text" id="apple">
+    
+    <label for="num_02">Enter Second Number</label>
+    <input type="text" id="ball">
+
+    <label for="num_03">Enter Third Number</label>
+    <input type="text" id="cat">
+
+    <label for="num_04">Enter Fourth Number</label>
+    <input type="text" id="dog">
+
+    <label for="result">Result:</label>
+    <input type="text" id="elef">
+
+    <button type="button" onclick="$4shots()">Result</button>
+</body>
+</html>

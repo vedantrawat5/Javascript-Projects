@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowest_number</title>
+    <style>
+        *{
+            padding: 2px;
+            margin:  2px;
+        }
+    </style>
+    <script>
+        function myVisual()
+        {
+            var l,m,n;
+             
+            l=Number(document.getElementById("num_01").value);
+            m=Number(document.getElementById("num_02").value);
+            
+            if(l<m){
+                document.getElementById("num_03").value=l;
+            }
+            else{
+                document.getElementById("num_03").value=m;
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="num_t1">
+        <strong>Enter the Value:</strong>
+    </label>
+    <input type="text" id="num_01">
+
+
+
+
+
+    <label for="num_t2" >
+        <strong>Enter the another Value:</strong>
+    </label>
+    <input type="text" id=num_02>
+
+
+
+
+
+    <button type="button" onclick="myVisual()"><strong>Display:</strong></button>
+    <input type="text" id="num_03">
+</body>
+</html>

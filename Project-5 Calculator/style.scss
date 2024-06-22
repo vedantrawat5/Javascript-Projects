@@ -1,0 +1,83 @@
+*{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+body{
+    overflow: hidden;
+    background-color: mix(purple, whitesmoke, 12);
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    width: 370px;
+    margin: auto;
+    border-radius: 2px;
+    background-color: mix(purple, whitesmoke, 20);
+    padding: 15px 15px 20px 20px;
+    box-shadow: 0 2px 4px 0 transparentize($color: #000000, $amount: 0.50);
+}
+
+#user-input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 5px;
+    background: whitesmoke;
+    text-align: right;
+    direction: ltr;
+    outline: none;
+    border: none;
+    box-shadow: 0 2px 4px 0 transparentize($color: #000000, $amount: 0.50);
+}
+
+.btn{
+    width: 24%;
+    height: 45px;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    background: whitesmoke;
+    box-shadow: 0 2px 4px 0 transparentize($color: #000000, $amount: 0.50);
+    &:hover{
+        background-color: darken($color: purple, $amount: 1);
+        color: whitesmoke;
+    }
+}
+
+.btnEqual{
+    width: 99.25%;
+    height: 45px;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    background: whitesmoke;
+    box-shadow: 0 2px 4px 0 transparentize($color: #000000, $amount: 0.50);
+    &:hover{
+        background-color: darken($color: purple, $amount: 1);
+        color: whitesmoke   ;
+    }
+}
+
+@media(max-width:480px){
+    .btn{
+        width: 23.4%;
+    }
+}
+@media(max-width:320px){
+    .btn{
+        width: 22.5%;
+    }
+}
+@media(max-width:240px){
+    .btn{
+        width: 20.19%;
+    }
+}

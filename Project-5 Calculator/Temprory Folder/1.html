@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boAt</title>
+    <style>
+        *{
+            padding: 2px;
+            margin:  2px;
+        }
+    </style>
+    <script>
+        function boAt(){
+            var p,q;
+
+        p=Number(document.getElementById("boo").value);
+        q=Number(document.getElementById("doo").value);
+
+        if(p>q)
+            {
+                document.getElementById("xoxo").value=p;
+            }
+        else
+            {
+                document.getElementById("xoxo").value=q;
+            } 
+        }
+    </script>
+</head>
+<body>
+    <label for="a">Enter a Value:</label>
+    <input type="text" id="boo">
+    <label for="a">Enter another Value:</label>
+    <input type="text" id="doo">
+
+    <label for="result"><strong>Result:</strong></label>
+
+    <input type="text" id="xoxo">
+    <button type="button" onclick="boAt()"> [:] </button>
+</body>
+</html>

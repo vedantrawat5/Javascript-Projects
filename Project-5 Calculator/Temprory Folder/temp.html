@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp</title>
+</head>
+<body>
+
+    <script>
+        let add = () => {
+            var num;
+            num = Number(document.getElementById("value1").value);
+            num += num
+            document.getElementById("output_result").value=num;
+        }
+    </script>
+
+    <label>Enter a Number</label>
+    <input type="text" id="value1">
+    
+
+    <label>Result:</label>
+    <input type="text" id="output_result">
+
+    <button onclick="add()">+</button>
+
+    <button onclick="myResult()">Enter</button>
+
+</body>
+</html>
