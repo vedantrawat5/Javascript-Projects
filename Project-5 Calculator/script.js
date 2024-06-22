@@ -7,10 +7,10 @@ function press(num){
 }
 
 function equal(){
+    userInput.value = eval(expression);
     expression = '';
-    userInput.value eval(expression);
 }
 function erase(){
     expression = '';
-    userInput = expression;
+    userInput.value = expression;
 }
